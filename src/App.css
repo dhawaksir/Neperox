@@ -1,0 +1,91 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('mountains.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  height: 80px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation li {
+  margin-left: 20px;
+}
+
+.navigation li:first-child {
+  margin-left: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+}
+
+.section {
+  min-height: 1000px;
+  background-color: transparent;
+  color: black;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px; /* Add margin-bottom for spacing between sections */
+}
+
+.section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('mountains.jpg');
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.section-content {
+  position: relative;
+  z-index: 1;
+}
+
+.footer {
+  height: 200px;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 24px;
+}
