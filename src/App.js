@@ -1,10 +1,8 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.css'; // Import app.css
-
-// Import the components/pages
-import About from './about';
-import Contact from './contact';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import "./App.css";
+import Contact from "./contact";
+import About from "./About";
 
 function App() {
   return (
@@ -19,7 +17,7 @@ function App() {
               <a href="#home">Home</a>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
               <a href="blog.html">Blog</a>
@@ -36,17 +34,18 @@ function App() {
           </ul>
         </div>
 
-        <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
 
         <div id="home" className="section">
           <div className="section-content">
             <h1>Welcome to NEPEROX IT Services</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum enim ac urna blandit, at cursus
-              velit dignissim. Duis euismod malesuada consectetur.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
+              euismod malesuada consectetur.
             </p>
           </div>
         </div>
@@ -55,8 +54,9 @@ function App() {
           <div className="section-content">
             <h1>About Us</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum enim ac urna blandit, at cursus
-              velit dignissim. Duis euismod malesuada consectetur.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
+              euismod malesuada consectetur.
             </p>
           </div>
         </div>
@@ -74,8 +74,9 @@ function App() {
           <div className="section-content">
             <h1>Contact</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum enim ac urna blandit, at cursus
-              velit dignissim. Duis euismod malesuada consectetur.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
+              euismod malesuada consectetur.
             </p>
           </div>
         </div>
@@ -96,8 +97,9 @@ function App() {
           <div className="section-content">
             <h1>Projects</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum enim ac urna blandit, at cursus
-              velit dignissim. Duis euismod malesuada consectetur.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
+              euismod malesuada consectetur.
             </p>
           </div>
         </div>

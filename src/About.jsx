@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 
-function About() {
+const About = () => {
   return (
     <section className="section-white">
       <div className="container">
@@ -95,6 +95,6 @@ function About() {
       </div>
     </section>
   );
-}
+};
 
 export default About;
