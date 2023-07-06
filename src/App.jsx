@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
-import Contact from "./contact";
+import ContactUs from "./Contact";
 import About from "./About";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
               <a href="blog.html">Blog</a>
             </li>
             <li>
-              <a href="contact.js">Contact</a>
+              <Link to="/contact">contact Us</Link>
             </li>
             <li>
               <a href="#services">Services</a>
@@ -34,10 +34,7 @@ function App() {
           </ul>
         </div>
 
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+       
 
         <div id="home" className="section">
           <div className="section-content">
@@ -50,7 +47,7 @@ function App() {
           </div>
         </div>
 
-        <div id="about" className="section">
+        <div id="/about" className="section">
           <div className="section-content">
             <h1>About Us</h1>
             <p>
@@ -58,8 +55,13 @@ function App() {
               vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
               euismod malesuada consectetur.
             </p>
+            <Routes>
+          <Route path="/about" element={<About />} />
+        
+        </Routes>
           </div>
         </div>
+        
 
         <div id="blog" className="section">
           <div className="section-content">
@@ -80,6 +82,10 @@ function App() {
             </p>
           </div>
         </div>
+        <Routes>
+         
+          <Route path="/contact" element={<ContactUs />} />
+        </Routes>
 
         <div id="services" className="section">
           <div className="section-content">
