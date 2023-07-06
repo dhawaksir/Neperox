@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
-import ContactUs from "./Contact";
-import About from "./About";
+import ContactUs from "./components/Contact/Contact";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <div className="logo">NEPEROX</div>
           <ul className="navigation">
             <li>
-              <a href="#home">Home</a>
+              <Link to="#home">Home</Link>
             </li>
             <li>
               <Link to="/about">About Us</Link>
@@ -34,43 +34,11 @@ function App() {
           </ul>
         </div>
 
-       
-
-        <div id="home" className="section">
-          <div className="section-content">
-            <h1>Welcome to NEPEROX IT Services</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
-              euismod malesuada consectetur.
-            </p>
-          </div>
-        </div>
-
-        <div id="/about" className="section">
-          <div className="section-content">
-            <h1>About Us</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
-              euismod malesuada consectetur.
-            </p>
-            <Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-        
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
-          </div>
-        </div>
-        
-
-        <div id="blog" className="section">
-          <div className="section-content">
-            <h1>Blog</h1>
-            <li>
-              <a href="#blog.html">Blog</a>
-            </li>
-          </div>
-        </div>
 
         <div id="contact" className="section">
           <div className="section-content">
@@ -82,10 +50,7 @@ function App() {
             </p>
           </div>
         </div>
-        <Routes>
-         
-          <Route path="/contact" element={<ContactUs />} />
-        </Routes>
+       
 
         <div id="services" className="section">
           <div className="section-content">

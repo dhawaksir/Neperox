@@ -1,6 +1,6 @@
 import React from "react"; 
 import { Container, Row, Col } from "react-bootstrap";
-import { contactConfig } from "./content_option";
+import { contactConfig } from "../../utils/constants";
 import './contact.css';
 
  function ContactUs() {
