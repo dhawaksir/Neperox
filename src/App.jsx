@@ -1,8 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
+import Home from "./components/Home/Home";
+import About from "./components/About/About"
+import Blog from "./components/Blog/Blog";
 import ContactUs from "./components/Contact/Contact";
-import About from "./components/About/About";
+import Services from "./components/services/Services";
+import Project from "./components/Project/Project";
+
 
 function App() {
   return (
@@ -37,47 +42,21 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<blog/>} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/Services" element={<Services/>} />
+          <Route path="/project" element={<Project/>} />
+         
+          
         </Routes>
 
-        <div id="contact" className="section">
-          <div className="section-content">
-            <h1>Contact</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
-              euismod malesuada consectetur.
-            </p>
-          </div>
-        </div>
+       
        
 
-        <div id="services" className="section">
-          <div className="section-content">
-            <h1>Services</h1>
-            <ul>
-              <li>Web Development</li>
-              <li>Mobile App Development</li>
-              <li>IT Consulting</li>
-              <li>Cloud Solutions</li>
-            </ul>
-          </div>
-        </div>
+      
 
-        <div id="projects" className="section">
-          <div className="section-content">
-            <h1>Projects</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
-              euismod malesuada consectetur.
-            </p>
-          </div>
-        </div>
 
-        <div className="footer">
-          <p>© 2023 NEPEROX. All rights reserved.</p>
-        </div>
+        
       </div>
     </Router>
   );
