@@ -1,19 +1,20 @@
 import React from 'react'
+import { Container,Row,Col } from 'react-bootstrap'
 
-const Services = () => {
+const DigitalMarketingPage = () => {
   return (
-    <div id="services" className="section">
-    <div className="section-content">
-      <h1>Services</h1>
-      <ul>
-        <li>Web Development</li>
-        <li>Mobile App Development</li>
-        <li>IT Consulting</li>
-        <li>Cloud Solutions</li>
-      </ul>
-    </div>
-  </div>
-  )
-}
+    <Container>
+      <Row className="mb-5 mt-3">
+        <Col lg="12">
+          <h1 className="display-4 mb-4">Services </h1>
+          <hr className="t_border my-4 ml-0 text-left" />
+        </Col>
+      </Row>
+    <div className="digital-marketing-page">
+      <h1 className="page-title">Digital Marketing Services</h1>
+     </div>
+     </Container>
+  );
+};
 
-export default Services
+export default DigitalMarketingPage;

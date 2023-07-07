@@ -1,19 +1,17 @@
 import React from 'react'
+import { Container,Row,Col } from 'react-bootstrap';
 
 const Project = () => {
   return (
-    
-    <div id="projects" className="section">
-    <div className="section-content">
-      <h1>Projects</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
-        euismod malesuada consectetur.
-      </p>
-    </div>
-  </div>
+    <Container>
+    <Row className="mb-5 mt-3">
+       <Col lg="8">
+         <h1 className="display-4 mb-4">Projects</h1>
+         <hr className="t_border my-4 ml-0 text-left" />
+       </Col>
+     </Row>
+     </Container>
   )
 }
 
-export default Project
+export default Project;

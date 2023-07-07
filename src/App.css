@@ -20,18 +20,20 @@ body, html {
 }
 
 .header {
+
   height: 80px;
   background-color: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color:red;
+.logo{
+  height:80px;
+  margin-left: 30px;
+ 
+
 }
 
 .navigation {
@@ -43,6 +45,7 @@ body, html {
 
 .navigation li {
   margin-left: 20px;
+  
 }
 
 .navigation li:first-child {
@@ -72,7 +75,7 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./assets/mountains.jpg');
+  /* background-image: url('./assets/mountains.jpg'); */
   background-size: cover;
   opacity: 0.5;
   z-index: -1;

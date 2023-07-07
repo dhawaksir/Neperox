@@ -1,56 +1,29 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import "./about.css";
 
-function Services() {
-  let message = `There are many variations of passages of Lorem Ipsum available but the \n majority have suffered alteration in some injected humour.`;
+const About = () => {
+  let message = ``;
+
   return (
-    <section className="section-white">
-      <div className="section-content">
-        <h1>About Us</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-          vestibulum enim ac urna blandit, at cursus velit dignissim. Duis
-          euismod malesuada consectetur.
-        </p>
-      </div>
-      <div>
-        <h1>our mission</h1>
-        <p>
-          Click edit button to change this text. Lorem ipsum dolor sit amet,
-          adipiscing elit. Click edit button to change this text. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-          nec ullamcorper mattis, pulvinar dapibus leo.
-        </p>
-      </div>
-      <div>
-        <h1>Extraordinary Experiences</h1>
-        <p>
-          Click edit button to change this text. Lorem ipsum dolor sit amet,
-          adipiscing elit. Click edit button to change this text. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-          nec ullamcorper mattis, pulvinar dapibus leo.
-        </p>
-      </div>
-      <div>
-        <h1>Our Core Values</h1>
-        <p>
-          Click edit button to change this text. Lorem ipsum dolor sit amet,
-          adipiscing elit. Click edit button to change this text. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-          nec ullamcorper mattis, pulvinar dapibus leo.
-        </p>
-      </div>
+   
+       <Container>
+      <Row className="mb-5 mt-3">
+        <Col lg="12">
+          <h1 className="display-4 mb-4">About Us </h1>
+          <hr className="t_border my-4 ml-0 text-left" />
+        </Col>
+      </Row>
+      <section className="section-white">
+        <Row className="mb-5 mt-3">
+          <Col lg="12">
+            <h2 className="section-title text-center">Testimonials</h2>
+            <p className="section-subtitle text-center">{message}</p>
+          </Col>
+        </Row>
 
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <h2 className="section-title">The Team Behind Pacifico</h2>
-
-            <p className="section-subtitle">{message}</p>
-          </div>
-
-          <div className="col-sm-6 col-md-4">
+        <Row className="team-row">
+          <Col sm={4}>
             <div className="team-item">
               <img
                 src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team1a.jpg"
@@ -63,29 +36,24 @@ function Services() {
               </div>
               <p>
                 Johnathan is our co-founder and has developed search strategies
-                for a variety of clients from international brands to medium
-                sized businesses for over five years.
+                for a variety of clients from international brands to medium-sized businesses for over five years.
               </p>
-
               <ul className="team-icon">
                 <li>
                   <a href="#" className="twitter">
                     <i className="fa fa-twitter"></i>
                   </a>
                 </li>
-
                 <li>
                   <a href="#" className="pinterest">
                     <i className="fa fa-pinterest"></i>
                   </a>
                 </li>
-
                 <li>
                   <a href="#" className="facebook">
                     <i className="fa fa-facebook"></i>
                   </a>
                 </li>
-
                 <li>
                   <a href="#" className="dribble">
                     <i className="fa fa-dribbble"></i>
@@ -93,9 +61,9 @@ function Services() {
                 </li>
               </ul>
             </div>
-          </div>
+          </Col>
 
-          <div className="col-sm-6 col-md-4">
+          <Col sm={4}>
             <div className="team-item">
               <img
                 src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team2a.jpg"
@@ -121,19 +89,16 @@ function Services() {
                     <i className="fa fa-twitter"></i>
                   </a>
                 </li>
-
                 <li>
                   <a href="#" className="pinterest">
                     <i className="fa fa-pinterest"></i>
                   </a>
                 </li>
-
                 <li>
                   <a href="#" className="facebook">
                     <i className="fa fa-facebook"></i>
                   </a>
                 </li>
-
                 <li>
                   <a href="#" className="dribble">
                     <i className="fa fa-dribbble"></i>
@@ -141,8 +106,8 @@ function Services() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="col-sm-6 col-md-4">
+          </Col>
+          <Col sm={4}>
             <div className="team-item">
               <img
                 src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team3a.jpg"
@@ -158,7 +123,7 @@ function Services() {
 
               <p>
                 Elisa first fell in love with digital marketing at the
-                university. He loves to learn, and looks forward to being part
+                university. He loves to learn and looks forward to being part
                 of this new exciting industry for many years.
               </p>
 
@@ -168,19 +133,16 @@ function Services() {
                     <i className="fa fa-twitter"></i>
                   </a>
                 </li>
-
                 <li>
                   <a href="#" className="pinterest">
                     <i className="fa fa-pinterest"></i>
                   </a>
                 </li>
-
                 <li>
                   <a href="#" className="facebook">
                     <i className="fa fa-facebook"></i>
                   </a>
                 </li>
-
                 <li>
                   <a href="#" className="dribble">
                     <i className="fa fa-dribbble"></i>
@@ -188,11 +150,11 @@ function Services() {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </Col>
+        </Row>
+      </section>
+    </Container>
   );
-}
+};
 
-export default Services;
+export default About;
