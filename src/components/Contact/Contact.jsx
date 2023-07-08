@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { Container, Row, Col } from "react-bootstrap";
+import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 import "./contact.css";
 
 const ContactUs = () => {
-  const [formStatus, setFormStatus] = useState('send');
+  const [formStatus, setFormStatus] = useState("send");
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setFormStatus('Submitting...');
+    setFormStatus("Submitting...");
     const { name, email, message } = e.target.elements;
     let ConFon = {
       name: name.value,
@@ -27,34 +27,40 @@ const ContactUs = () => {
           <hr className="t_border my-4 ml-0 text-left" />
         </Col>
       </Row>
-      <div className="container mt-5">
-        <h1 className="mb-3">We're Ready, Let's Talk.</h1>
-        
-        <form onSubmit={onSubmit}>
-          <div className="mb-3">
-            <label className="form-label" htmlFor="name">
-              Name
-            </label>
-            <input className="form-control" type="text" id="name" required />
-          </div>
-          <div className="mb-3">
-            <label className="form-label" htmlFor="email">
-              Email
-            </label>
-            <input className="form-control" type="email" id="email" required />
-          </div>
-          <div className="mb-3">
-            <label className="form-label" htmlFor="message">
-              Message
-            </label>
-            <input className="form-control" id="message" required />
-          </div>
-          <button className="btn btn-danger" type="submit">
-            {formStatus}
-          </button>
-        </form>
-      </div>
-      <div className="col-md-6">
+      <div className="contact-container">
+        <div className="container mt-5">
+          <h1 className="mb-3">We're Ready, Let's Talk.</h1>
+
+          <form onSubmit={onSubmit}>
+            <div className="mb-3">
+              <label className="form-label" htmlFor="name">
+                Name
+              </label>
+              <input className="form-control" type="text" id="name" required />
+            </div>
+            <div className="mb-3">
+              <label className="form-label" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="form-control"
+                type="email"
+                id="email"
+                required
+              />
+            </div>
+            <div className="mb-3">
+              <label className="form-label" htmlFor="message">
+                Message
+              </label>
+              <input className="form-control" id="message" required />
+            </div>
+            <button className="btn btn-danger" type="submit">
+              {formStatus}
+            </button>
+          </form>
+        </div>
+        <div className="col-md-6">
           <div className="contact-info">
             <h2>Contact Info</h2>
             <div>
@@ -72,20 +78,31 @@ const ContactUs = () => {
           </div>
           <div className="social-media-icons">
             <h3>Follow Us</h3>
-            <a href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF size={32} />
             </a>
-            <a href="https://www.twitter.com/example" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.twitter.com/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter size={32} />
             </a>
-            <a href="https://www.youtube.com/example" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.youtube.com/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaYoutube size={32} />
             </a>
           </div>
         </div>
-      
+      </div>
     </Container>
-   
   );
 };
 
