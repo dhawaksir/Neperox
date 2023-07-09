@@ -15,16 +15,17 @@ const Footer = () => {
         <Row>
           <Col lg="4" md="4" sm="12">
             <div>
-              {/* <img src={logo} alt="NEPEROX" className="logo" /> */}
-              <h1>
+             
                 <Link to="/home" className="d-flex align-items-center gap-2">
                   <i className=""></i>
-                  <h6>GET IN TOUCH</h6>
+                  <h3>GET IN TOUCH</h3>
+                 
+                  <h6>Follow Us</h6>
                 </Link>
-              </h1>
+             
               <div className="footer__logo-content">
                 <div className="social-media-icons">
-                  <h3>Follow Us</h3>
+                
                   <a href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF size={32} />
                   </a>
@@ -39,7 +40,7 @@ const Footer = () => {
             </div>
           </Col>
 
-          <Col lg="8" md="8" sm="12">
+          <Col lg="4" md="4" sm="12">
             <Row>
               <Col lg="6" md="6" sm="6">
                 <div className="mb-4">

@@ -1,17 +1,35 @@
-import React from "react";
-import { Container,Row,Col } from 'react-bootstrap';
+// import React, { useEffect, useState } from 'react';
+// // import axios from 'axios';
 
-const Blog = () => {
-  return (
-    <Container>
-    <Row className="mb-5 mt-3">
-       <Col lg="8">
-         <h1 className="display-4 mb-4">Blog</h1>
-         <hr className="t_border my-4 ml-0 text-left" />
-       </Col>
-     </Row>
-     </Container>
-  );
-};
+// const Blog = () => {
+//   const [blogPosts, setBlogPosts] = useState([]);
 
-export default Blog;
+//   useEffect(() => {
+//     fetchBlogPosts();
+//   }, []);
+
+//   const fetchBlogPosts = async () => {
+//     try {
+//       const response = await axios.get('/api/blogposts');
+//       setBlogPosts(response.data);
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   };
+
+//   return (
+//     <div>
+//       <h1>Blog</h1>
+//       {blogPosts.map((post) => (
+//         <div key={post._id}>
+//           <h2>{post.title}</h2>
+//           <p>{post.content}</p>
+//           <p>Author: {post.author}</p>
+//           <p>Date: {post.createdAt}</p>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default Blog;
