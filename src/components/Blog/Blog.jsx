@@ -1,6 +1,6 @@
 import React from "react";
-// import "./blog.css"
-// import Blog1 from './img/blog-01.jpg';
+import "./blog.css";
+// import Blog1 from './assets/blog1.jpg'
 // import Blog2 from './img/blog-02.jpg';
 // import Blog3 from './img/blog-03.jpg';
 
@@ -21,7 +21,7 @@ function Blog () {
                         <div className="project__box pointer relative">
                             <div className="porject__box__img pointer relative">
                                 <div className="project__img__box">
-                                    {/* <img src={Blog1} alt="" className="project__img" /> */}
+                                     {/* <img src={Blog1} alt="" className="project__img" />  */}
                                 </div>
                                 <div className="mask__effect"></div>
                             </div>

@@ -1,4 +1,4 @@
-/* Color Scheme */
+Color Scheme
 :root {
   --primary-color: #f8f9fa; /* Primary color */
   --secondary-color: #141313; /* Secondary color */
@@ -119,4 +119,23 @@
   .newsletter input[type="email"] {
     width: 100%;
   }
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 18px;
 }
