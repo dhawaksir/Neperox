@@ -1,74 +1,51 @@
-import React from "react";
-import "./blog.css";
-// import Blog1 from './assets/blog1.jpg'
-// import Blog2 from './img/blog-02.jpg';
-// import Blog3 from './img/blog-03.jpg';
+import React from 'react';
+import './blog.css'; // Import the CSS file
 
-function Blog () {
-    return (
-        <div className="blog component__space" id="Blog">
-            <div className="heading">
-                <h1 className="heading">Latest News</h1>
-                <p className="heading p__color">There are many variations of passages of
-                Lorem Ipsum available,</p>
-                <p className="heading p__color">but the majority have suffered alteration</p>
-            </div>
+const BlogPage = () => {
+  // Placeholder data for blog posts
+  const blogPosts = [
+    {
+      title: "HyperX Fury 8GB 3000MHz DDR4 Price in Nepal",
+      image: "hyperx-fury.jpg",
+      content: "HyperX Fury 8GB DDR4 features an updated heat spreader and speeds up to 3466MHz for a stylish performance boost. FURY DDR4’s XMP-ready and available in 2400MHz–3466MHz speeds, CL15–16 latencies, 8GB and 16GB single module capacities, and 16GB–64GB...",
+      date: "May 30, 2022",
+      category: "PC Components, RAM"
+    },
+    {
+      title: "HONOR Magic Watch Reviews and Price in Nepal",
+      image: "honor-magic-watch.jpg",
+      content: "HONOR MAGIC WATCH is the luxurious craftsmanship smartwatch that is designed and developed by Honor company. The release date of MAGIC WATCH was in November 2018 by HONOR company in the market of smartwatches. now, let’s walk...",
+      date: "May 30, 2022",
+      category: "HONOR, SMARTWATCH"
+    },
+    // Add more blog posts here...
+  ];
 
-            <div className="container">
-                <div className="row">
+  return (
+    <section className="blog-page">
+      <div className="container">
+        <h2>Latest Blog Posts</h2>
 
-                     <div className="col__3">
-                        <div className="project__box pointer relative">
-                            <div className="porject__box__img pointer relative">
-                                <div className="project__img__box">
-                                     {/* <img src={Blog1} alt="" className="project__img" />  */}
-                                </div>
-                                <div className="mask__effect"></div>
-                            </div>
-                            <div className="Blog__meta absolute">
-                                <h5 className="project__text">Development</h5>
-                                <h4 className="project__text">Getting tickets to the big show</h4>
-                                <a href="button" className="blog project__btn btn">Read More</a>
-                            </div>
-                        </div>
-                     </div>
-
-                     <div className="col__3">
-                        <div className="project__box pointer relative">
-                            <div className="porject__box__img pointer relative">
-                                <div className="project__img__box">
-                                    {/* <img src={Blog2} alt="" className="project__img" /> */}
-                                </div>
-                                <div className="mask__effect"></div>
-                            </div>
-                            <div className="Blog__meta absolute">
-                                <h5 className="project__text">Development</h5>
-                                <h4 className="project__text">Getting tickets to the big show</h4>
-                                <a href="button" className="blog project__btn btn">Read More</a>
-                            </div>
-                        </div>
-                     </div>
-
-                     <div className="col__3">
-                        <div className="project__box pointer relative">
-                            <div className="porject__box__img pointer relative">
-                                <div className="project__img__box">
-                                    {/* <img src={Blog3} alt="" className="project__img" /> */}
-                                </div>
-                                <div className="mask__effect"></div>
-                            </div>
-                            <div className="Blog__meta absolute">
-                                <h5 className="project__text">Development</h5>
-                                <h4 className="project__text">Getting tickets to the big show</h4>
-                                <a href="button" className="blog project__btn btn">Read More</a>
-                            </div>
-                        </div>
-                     </div>
-
+        <div className="blog-grid">
+          {blogPosts.map((post, index) => (
+            <div className="blog-post" key={index}>
+              <div className="blog-post-image">
+                <img src={post.image} alt={post.title} />
+              </div>
+              <div className="blog-post-details">
+                <h3>{post.title}</h3>
+                <p>{post.content}</p>
+                <div className="blog-post-meta">
+                  <span className="blog-post-date">{post.date}</span>
+                  <span className="blog-post-category">{post.category}</span>
                 </div>
+              </div>
             </div>
+          ))}
         </div>
-    )
+      </div>
+    </section>
+  );
 }
 
-export default Blog;
+export default BlogPage;
