@@ -1,50 +1,42 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import "./services.css";
+import "./services.css"; // Import the CSS file
+// import Footer from './components/footer/footer';
 
-const DigitalMarketingPage = () => {
-  const services = [
-    {
-      title: 'UI Design',
-      image: 'ui-design.jpg',
-      description: 'Lorem Ipsum is simply dummy text of the printing industry.',
-    },
-    {
-      title: 'Marketing',
-      image: 'marketing.jpg',
-      description: 'Lorem Ipsum is simply dummy text of the printing industry.',
-    },
-    {
-      title: 'Ecommerce',
-      image: 'ecommerce.jpg',
-      description: 'Lorem Ipsum is simply dummy text of the printing industry.',
-    },
-  ];
-
+const ServicesPage = () => {
   return (
-    <Container>
-      <Row className="mb-5 mt-3">
-        <Col lg="12">
-          <h1 className="display-4 mb-4">Services </h1>
-          <hr className="t_border my-4 ml-0 text-left" />
-        </Col>
-      </Row>
-      <div className="container">
-        <div className="box-form">
-          <h1 className="page-title">Digital Marketing Services</h1>
-          <div className="services-container">
-            {services.map((service, index) => (
-              <div key={index} className="service">
-                <img src={service.image} alt={service.title} />
-                <h2>{service.title}</h2>
-                <p>{service.description}</p>
-              </div>
-            ))}
+    <div>
+      <section className="services-page">
+        <div className="container">
+          <h2>Our Services</h2>
+
+          <div className="service">
+            <img src="digital-marketing.jpg" alt="Digital Marketing" />
+            <h3>Digital Marketing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique sapien vitae risus ullamcorper faucibus.</p>
+          </div>
+
+          <div className="service">
+            <img src="seo-optimization.jpg" alt="SEO Optimization" />
+            <h3>SEO Optimization</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique sapien vitae risus ullamcorper faucibus.</p>
+          </div>
+
+          <div className="service">
+            <img src="social-media-marketing.jpg" alt="Social Media Marketing" />
+            <h3>Social Media Marketing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique sapien vitae risus ullamcorper faucibus.</p>
+          </div>
+
+          <div className="service">
+            <img src="content-creation.jpg" alt="Content Creation" />
+            <h3>Content Creation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique sapien vitae risus ullamcorper faucibus.</p>
           </div>
         </div>
-      </div>
-    </Container>
+      </section>
+      {/* <Footer /> */}
+    </div>
   );
-};
+}
 
-export default DigitalMarketingPage;
+export default ServicesPage;
