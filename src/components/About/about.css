@@ -3,19 +3,19 @@
   }
   
   .section-white {
-	background-color: #ffffff;
+	background-color: #f9f9f9;
 	padding: 50px 0;
   }
   
   .section-title {
-	font-size: 28px;
+	font-size: 32px;
 	font-weight: 700;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	animation: fadeInUp 1s ease-in-out;
   }
   
   .section-subtitle {
-	font-size: 16px;
+	font-size: 18px;
 	color: #888888;
 	margin-bottom: 30px;
 	animation: fadeInUp 1s ease-in-out;
@@ -26,15 +26,22 @@
 	margin-top: 30px;
   }
   
+  .team-item {
+	text-align: center;
+	margin-bottom: 40px;
+  }
+  
   .team-box {
 	position: relative;
 	display: inline-block;
-	width: 200px;
-	height: 200px;
+	width: 220px;
+	height: 220px;
 	background-color: #f2f2f2;
 	margin: 10px;
 	cursor: pointer;
 	transition: background-color 0.3s ease-in-out;
+	border-radius: 50%;
+	overflow: hidden;
   }
   
   .team-box:hover {
@@ -57,26 +64,20 @@
 	opacity: 1;
   }
   
-  .team-item {
-	text-align: center;
-	margin-bottom: 30px;
-  }
-  
   .team-img {
 	width: 100%;
-	max-width: 200px;
-	height: auto;
-	margin-bottom: 20px;
+	height: 100%;
+	object-fit: cover;
   }
   
   .team-item h3 {
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 10px;
   }
   
   .team-info p {
-	font-size: 14px;
+	font-size: 16px;
 	color: #888888;
 	margin-bottom: 20px;
   }
@@ -95,6 +96,18 @@
 	color: #ff0000; /* Change to your desired color */
   }
   
+  .section-white ul {
+	margin-left: 20px;
+  }
+  
+  .section-white li {
+	margin-bottom: 15px;
+  }
+  
+  .section-white li strong {
+	font-weight: 600;
+  }
+  
   @keyframes fadeInUp {
 	0% {
 	  opacity: 0;
@@ -110,5 +123,35 @@
 	.team-item {
 	  margin-bottom: 50px;
 	}
+  }
+  
+  /* Additional CSS styles */
+  .display-4 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
+  }
+  
+  .t_border {
+	border-top: 3px solid #888888;
+	width: 80px;
+	margin-top: 10px;
+  }
+  
+  .mb-4 {
+	margin-bottom: 30px;
+  }
+  
+  .my-4 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+  }
+  
+  .ml-0 {
+	margin-left: 0;
+  }
+  
+  .text-left {
+	text-align: left;
   }
   
