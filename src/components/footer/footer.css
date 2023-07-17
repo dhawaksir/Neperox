@@ -1,23 +1,28 @@
 /* Footer Styles */
 footer {
-  background-color: #f8f8f8;
-  padding: 40px 0;
+  background-color: #fff; /* Outer white background */
+  padding: 60px 0;
+  color: #333;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
+  background-color: #f8f8f8; /* Inner smoke white background */
+  padding: 20px;
+  border-radius: 2px;
+  gap: 40px; /* Add equal spacing between footer columns */
 }
 
 .footer-column {
-  flex-basis: 30%;
+  flex-basis: 50%;
 }
 
 .footer-column h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 25px;
+  margin-bottom: 17px;
   color: #333;
 }
 
@@ -34,25 +39,29 @@ footer {
 }
 
 .footer-column ul li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .footer-column ul li a {
   color: #777;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #555;
 }
 
 .bottom-footer {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
-  justify-content: center; /* Center align the content */
+  justify-content: center;
   align-items: center;
 }
 
 .bottom-footer p {
   font-size: 14px;
   color: #777;
-  text-align: center; /* Center align the text */
 }
 
 .social-icons {
@@ -68,27 +77,33 @@ footer {
 
 .social-icons li a {
   color: #777;
-  font-size: 18px;
-}
-
-/* Add your custom styles below this line */
-.footer-logo {
-  height: 50px;
-  margin-left: 20px;
-}
-
-/* Add custom gap between sections */
-.footer-column + .footer-column {
-  margin-left: 40px;
-}
-
-.social-icons li a {
-  color: #777;
-  font-size: 18px;
-  text-decoration: none; /* Add text-decoration for links */
-  transition: color 0.3s ease; /* Add transition effect for color change */
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .social-icons li a:hover {
-  color: #333; /* Change color on hover */
+  color: #555;
+}
+
+/* Custom Background Styles */
+.footer-logo {
+  height: 35px;
+}
+
+.wave {
+  position: relative;
+  overflow: hidden;
+}
+
+.wave::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; /* Increase the height to extend the smoke white background */
+  background-color: #f8f8f8; /* Inner smoke white background for the wave */
+  transform-origin: center bottom;
+  transform: scaleY(2);
 }

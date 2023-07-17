@@ -38,6 +38,7 @@ const Footer = () => {
       <div className="bottom-footer">
         <p>&copy; 2023 Marketing Website. All rights reserved.</p>
       </div>
+      <div className="wave"></div> {/* Add a decorative wave element */}
     </footer>
   );
 }
