@@ -45,13 +45,14 @@ footer {
 .bottom-footer {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center align the content */
   align-items: center;
 }
 
 .bottom-footer p {
   font-size: 14px;
   color: #777;
+  text-align: center; /* Center align the text */
 }
 
 .social-icons {
@@ -71,3 +72,12 @@ footer {
 }
 
 /* Add your custom styles below this line */
+.footer-logo {
+  height: 50px;
+  margin-left: 20px;
+}
+
+/* Add custom gap between sections */
+.footer-column + .footer-column {
+  margin-left: 40px;
+}
