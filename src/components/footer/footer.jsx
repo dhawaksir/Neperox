@@ -26,7 +26,7 @@ const Footer = () => {
           <p>Email: apha11@gmail.com</p>
           <p>Phone: +977-9849495678</p>
         </div>
-        <div className="footer-column">
+        <div className="footer-column social-column">
           <h4>Follow Us</h4>
           <ul className="social-icons">
             <li><a href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a></li>

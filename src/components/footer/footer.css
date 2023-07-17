@@ -81,3 +81,14 @@ footer {
 .footer-column + .footer-column {
   margin-left: 40px;
 }
+
+.social-icons li a {
+  color: #777;
+  font-size: 18px;
+  text-decoration: none; /* Add text-decoration for links */
+  transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+.social-icons li a:hover {
+  color: #333; /* Change color on hover */
+}
